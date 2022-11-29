@@ -76,15 +76,15 @@ export default function LoginScreen() {
   }
 
   return (
-    <Layout title="Login">
+    <Layout title="로그인">
       <form
         className="mx-auto max-w-screen-md"
         onSubmit={handleSubmit(submitHandler)}
       >
-        <h1 className="text-3xl text-center mb-4">Login</h1>
+        <h1 className="text-3xl text-center mb-4 font-bold">로그인</h1>
 
         <div className="mb-4 p-4 rounded-lg">
-          <label htmlFor="email">Email</label>
+          <label htmlFor="email">이메일</label>
           <input
             type="email"
             {...register('email', {
@@ -102,14 +102,14 @@ export default function LoginScreen() {
             <div className="text-red-500">{errors.email.message}</div>
           )}
 
-          <label htmlFor="password">Password</label>
+          <label htmlFor="password">비밀번호</label>
           <input
             type="password"
             {...register('password', {
               required: 'Please enter password',
               minLength: {
                 value: 3,
-                message: '패스워드는 3글자 이상으로 입력하세요',
+                message: '비밀번호는 3글자 이상으로 입력하세요',
               },
             })}
             className="w-full mb-4"
@@ -136,7 +136,7 @@ export default function LoginScreen() {
               type="button"
               onClick={githubLoginHandler}
             >
-              Github Login
+              Github 로그인
             </button>
           </div>
 
@@ -146,7 +146,7 @@ export default function LoginScreen() {
               type="button"
               onClick={googleLoginHandler}
             >
-              Google Login
+              Google 로그인
             </button>
           </div>
 
@@ -172,5 +172,5 @@ export default function LoginScreen() {
         </div>
       </form>
     </Layout>
-  );
+  )
 }

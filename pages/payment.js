@@ -41,17 +41,16 @@ export default function PaymentScreen() {
   }, [paymentMethod, router, shippingAddress.address])
 
   return (
-    <Layout title="Payment Method">
+    <Layout title="지불 방법">
       <CheckoutWizard activeStep={2} />
       <form className="mx-auto max-w-screen-md" onSubmit={submitHandler}>
         <h1 className="mb-4 text-xl">Payment Method</h1>
         {[
-          'PayPal',
-          'Stripe',
-          'CashOnDelivery',
-          'KakaoPay',
-          'NaverPay',
-          '외상',
+          '카카오페이',
+          '네이버페이',
+          '무통장 입금',
+          '은행 앱으로 결제',
+          '현금',
         ].map((payment) => (
           <div key={payment} className="mb-4">
             <input
@@ -73,9 +72,9 @@ export default function PaymentScreen() {
             type="button"
             className="default-button"
           >
-            Back
+            뒤로 가기
           </button>
-          <button className="primary-button">Next</button>
+          <button className="primary-button">다음으로</button>
         </div>
       </form>
     </Layout>

@@ -24,11 +24,11 @@ function CartScreen() {
   }
 
   return (
-    <Layout title="Shopping Cart">
-      <h1 className="mb-4 text-xl">Shopping Cart - 쇼핑카트</h1>
+    <Layout title="장바구니">
+      <h1 className="mb-4 text-xl font-bold">장바구니</h1>
       {cartItems.length === 0 ? (
         <div>
-          Cart is empty. <Link href="/">Go shopping - 쇼핑하러 가기 </Link>
+          장바구니에 상품이 없습니다.<Link href="/">쇼핑하러 가기 </Link>
         </div>
       ) : (
         <div className="grid md:grid-cols-4 md:gap-5">

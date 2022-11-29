@@ -61,7 +61,7 @@ export default function Layout({ title, children }) {
                   <Menu.Items className="absolute right-0 w-56 origin-top-right bg-white  shadow-lg ">
                     <Menu.Item>
                       <DropdownLink className="dropdown-link" href="/profile">
-                        Profile
+                        프로필
                       </DropdownLink>
                     </Menu.Item>
                     <Menu.Item>
@@ -95,7 +95,7 @@ export default function Layout({ title, children }) {
         <main className="container m-auto mt-4 px-4">{children}</main>
 
         <footer className="flex h-10 bg-red-100 justify-center items-center shadow-inner">
-          <p> Copyright &copy; 2022 NextMall </p>
+          <p>2022 bookweb</p>
         </footer>
       </div>
     </div>
