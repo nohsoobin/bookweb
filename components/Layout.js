@@ -69,7 +69,7 @@ export default function Layout({ title, children }) {
                         className="dropdown-link"
                         href="/order-history"
                       >
-                        Order History
+                        주문 내역
                       </DropdownLink>
                     </Menu.Item>
                     <Menu.Item>
@@ -78,14 +78,14 @@ export default function Layout({ title, children }) {
                         href="#"
                         onClick={logoutClickHandler}
                       >
-                        Logout
+                        로그아웃
                       </a>
                     </Menu.Item>
                   </Menu.Items>
                 </Menu>
               ) : (
                 <Link href="/login" className="p-2">
-                  Login
+                  로그인
                 </Link>
               )}
             </div>
