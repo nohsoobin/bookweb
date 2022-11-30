@@ -50,7 +50,7 @@ export default nextAuth({
 
     GoogleProvider({
       clientId: process.env.GOOGLE_CLIENT_ID,
-      clientSecret: process.env.GOOGL_ECLIENT_SECRET,
+      clientSecret: process.env.GOOGLE_CLIENT_SECRET,
     }),
 
     KakaoProvider({
